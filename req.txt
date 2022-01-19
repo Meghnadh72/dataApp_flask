@@ -1,6 +1,5 @@
 flask
 pandas
 sqlalchemy
-psycopg2
 flask_cors
 

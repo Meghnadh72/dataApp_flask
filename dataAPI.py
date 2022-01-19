@@ -10,6 +10,8 @@ from sqlalchemy.sql.expression import text
 
 
 app = Flask(__name__)
+
+
 cors = CORS(app, resources={r"/*": {"origins": "*"}})
 # Upload folder
 UPLOAD_FOLDER = 'static/files'
@@ -168,8 +170,10 @@ def computeValue():
         returnValue = colAsDataframe.max()
         return make_response({"value" : str(returnValue[0])})
 
-    
 
+ 
+if __name__ == '__main__':
+    app.run(host=127.0.0.1', port=5000)
 
 
 
