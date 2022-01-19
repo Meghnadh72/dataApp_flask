@@ -2,4 +2,4 @@ flask
 pandas
 sqlalchemy
 flask_cors
-
+psycopg2
